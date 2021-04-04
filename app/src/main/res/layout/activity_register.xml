@@ -53,18 +53,19 @@
             android:ems="10"
             android:id="@+id/etPassword"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etUsername"
+            app:layout_constraintTop_toBottomOf="@+id/etPhone"
             android:hint="@string/edittext_password"
-            android:inputType="text" android:layout_marginTop="20dp" android:layout_marginStart="32dp"
+            android:inputType="text" android:layout_marginStart="32dp"
             android:layout_marginEnd="32dp"
-            android:backgroundTint="@color/colorPrimary"/>
+            android:backgroundTint="@color/colorPrimary" android:layout_marginTop="20dp"
+            app:layout_constraintHorizontal_bias="0.0"/>
     <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:id="@+id/etRepeatPassword"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etPhone"
+            app:layout_constraintTop_toBottomOf="@+id/etPassword"
             android:hint="@string/edittext_repeat_password"
             android:inputType="text" android:layout_marginStart="32dp"
             android:layout_marginEnd="32dp" android:backgroundTint="@color/colorPrimary"
@@ -78,8 +79,8 @@
             android:hint="@string/edittext_phone"
             android:inputType="text" android:layout_marginStart="32dp"
             android:layout_marginEnd="32dp" android:backgroundTint="@color/colorPrimary"
-            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintTop_toBottomOf="@+id/etPassword"
-            android:layout_marginTop="20dp"/>
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintTop_toBottomOf="@+id/etUsername" android:layout_marginTop="20dp"/>
     <Button
             android:text="@string/button_register"
             android:layout_width="match_parent"
@@ -89,5 +90,5 @@
             android:layout_marginEnd="32dp" android:layout_marginStart="32dp"
             android:background="@drawable/button_rounded" android:textColor="@android:color/white"
             app:layout_constraintTop_toBottomOf="@+id/etRepeatPassword"
-            app:layout_constraintVertical_bias="0.13999999"/>
+            app:layout_constraintVertical_bias="0.25"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
